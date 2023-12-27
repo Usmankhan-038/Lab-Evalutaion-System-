@@ -9,7 +9,7 @@
 
 using namespace std;
 
-//Edited
+
 Trie trie;
 
 class Teacher
@@ -18,7 +18,7 @@ private:
     string teacherName, id, password, course;
 public:
     Teacher();
-    void setData(string tn, string id, string pw, string c);
+    void setData(string teacherName, string id, string pass, string course);
 };
 Teacher::Teacher()
 {
@@ -27,12 +27,12 @@ Teacher::Teacher()
     password = " ";
     course = " ";
 }
-void Teacher::setData(string tn, string id, string pw, string c)
+void Teacher::setData(string teacherName, string id, string pass, string course)
 {
-    teacherName = tn;
+    this->teacherName = teacherName;
     this->id = id;
-    password = pw;
-    course = c;
+    this->password = pass;
+    this->course = course;
 }
 
 class Student
